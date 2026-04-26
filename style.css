@@ -1,0 +1,85 @@
+body {
+    font-family: Verdana, sans-serif;
+    background-color: #85aabc;
+    text-align: center;
+    margin: 0;
+}
+
+/* Контейнер */
+.container {
+    width: 90%;
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+/* Заголовок */
+h1 {
+    color: rgb(14, 14, 54);
+    text-transform: uppercase;
+}
+
+/* СІТКА */
+.wrapper {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    margin-top: 20px;
+}
+
+/* КАРТКА */
+.card {
+    background-color: rgb(120, 140, 143);
+    border-radius: 12px;
+    padding: 10px;
+    border: 1px solid #00000033;
+
+    /* анімація */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* ЕФЕКТ НАВЕДЕННЯ */
+.card:hover {
+    transform: scale(1.05) translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+}
+
+/* КАРТИНКА */
+.card img {
+    width: 100%;
+    aspect-ratio: 1 / 1;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+/* ЗАГОЛОВОК */
+h2 {
+    margin: 10px 0 5px;
+    transition: color 0.3s ease;
+}
+
+/* ХОВЕР НА ТЕКСТ */
+h2:hover {
+    color: red;
+    cursor: pointer;
+}
+
+/* ТЕКСТ */
+p {
+    font-size: 14px;
+    color: #1a1a1a;
+}
+
+/* НАВІГАЦІЯ */
+nav {
+    margin-top: 30px;
+}
+
+a {
+    text-decoration: none;
+    color: rgb(33, 43, 53);
+    font-weight: bold;
+}
+
+a:hover {
+    color: rgb(61, 69, 86);
+}
